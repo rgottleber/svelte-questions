@@ -5,6 +5,14 @@
   const dispatch = createEventDispatcher();
 </script>
 
-<h1>{selection.question}</h1>
+<div>
+  <h1>{selection.question}</h1>
 
-<button on:click={() => dispatch("restart")}>Another?</button>
+  <button on:click={() => dispatch("restart")}>Another?</button>
+</div>
+
+<style>
+  div {
+    text-align: center;
+  }
+</style>

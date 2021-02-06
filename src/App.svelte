@@ -16,7 +16,6 @@
       "https://random-question.herokuapp.com/api/questions/random"
     );
     const data = await res.json();
-    console.log(data);
     return data;
   };
 </script>

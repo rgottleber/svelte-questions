@@ -11,10 +11,16 @@
   };
 </script>
 
-<header><h1>What to Ask?</h1></header>
-
-<p>Are you ready for a new questions?</p>
-
 <div>
-  <button on:click={() => select()} disabled={selected}> New Question </button>
+  <header><h1>Conversation Starters</h1></header>
+
+  <p>Are you ready for a new conversation?</p>
+
+  <button on:click={() => select()} disabled={selected}> Sure! </button>
 </div>
+
+<style>
+  div {
+    text-align: center;
+  }
+</style>
