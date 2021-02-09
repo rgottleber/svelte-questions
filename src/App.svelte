@@ -7,13 +7,14 @@
   let selection;
   const start = async (e) => {
     const { question } = await load_question();
+    console.log(question);
     selection = question;
     state = "questions";
   };
 
   const load_question = async () => {
     const res = await fetch(
-      "https://random-question.herokuapp.com/api/questions/random"
+      "http://localhost:9000/.netlify/functions/getQuestion"
     );
     const data = await res.json();
     return data;

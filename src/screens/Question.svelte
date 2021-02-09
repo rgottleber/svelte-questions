@@ -6,7 +6,7 @@
 </script>
 
 <div>
-  <h1>{selection.question}</h1>
+  <h1>{selection}</h1>
 
   <button on:click={() => dispatch("restart")}>Another?</button>
 </div>
