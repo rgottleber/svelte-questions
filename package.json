@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "build:app": "rollup -c",
-    "build:server" : "netlify-lambda build functions",
-    "build": "build:server && build:app",
+    "build:server": "netlify-lambda build functions",
+    "build": "npm run build:server && npm run build:app",
     "dev": "rollup -c -w",
-    "dev:server" : "netlify-lambda serve functions",
+    "dev:server": "netlify-lambda serve functions",
     "start": "sirv public",
     "validate": "svelte-check"
   },
