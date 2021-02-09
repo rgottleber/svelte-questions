@@ -13,9 +13,7 @@
   };
 
   const load_question = async () => {
-    const res = await fetch(
-      "http://localhost:9000/.netlify/functions/getQuestion"
-    );
+    const res = await fetch(".netlify/functions/getQuestion");
     const data = await res.json();
     return data;
   };
